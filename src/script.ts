@@ -90,13 +90,30 @@
 
 // classes  
 
-import { Car } from "./classes/Car.js"
+// import { Car } from "./classes/Car.js"
 
-const car1 = new Car("bmw", 33, "usa")
-const car2 = new Car("audi", 33, "uk")
+// const car1 = new Car("bmw", 33, "usa")
+// const car2 = new Car("audi", 33, "uk")
 
-let arr: Car[] = [];
+// let arr: Car[] = [];
 
-arr.push(car1)
-arr.push(car2)
-console.log(arr)
+// arr.push(car1)
+// arr.push(car2)
+// console.log(arr)
+
+interface RectangleOptions {
+    width: number;
+    length: number;
+}
+
+function drawRectangle(options: RectangleOptions){
+    let width = options.width;
+    let length = options.length;
+}
+
+let threeDOptions = {
+    width: 30,
+    length: 20,
+    height: 30
+}
+drawRectangle(threeDOptions)
